@@ -1,0 +1,22 @@
+.parrafo{
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    color: pink;
+    font-size: large;
+    font-weight: 500;
+}
+div{
+    text-align: center;
+    border: 6px solid black;
+    background-color:blue;
+    color: white;
+    border-radius: 10px;
+    font-size: large;
+}
+span ul li{
+    color: blueviolet;
+    font-style: oblique;
+    font-weight: 700;
+}
