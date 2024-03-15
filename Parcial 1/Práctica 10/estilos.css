@@ -1,0 +1,29 @@
+.parrafo{
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    color: pink;
+    font-size: large;
+    font-weight: 500;
+}
+span ul li{
+    color: blueviolet;
+    font-style: oblique;
+    font-weight: 700;
+}
+#button{
+    background-color: blue;
+    border: 5px solid black;
+    font-size: large;
+
+}
+.text{
+    text-align: center;
+    color: rgb(42, 9, 224);
+    border-radius: 10px;
+    font-size: large;
+}
+a:href{
+    color: blueviolet;
+}
