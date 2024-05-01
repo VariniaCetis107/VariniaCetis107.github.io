@@ -5,8 +5,5 @@ Manjarrez Valencia Varinia Yulianna
 
 (https://cetis107.edu.mx/portal/)
 
-![Cetis107/CetisCaptura.png]
-
-
-(https://github.com/VariniaCetis107/VariniaCetis107.github.io/blob/main/Cetis107/CetisCaptura.png)
+![Cetis107/CetisCaptura.png](https://github.com/VariniaCetis107/VariniaCetis107.github.io/blob/main/Cetis107/CetisCaptura.png)
 
