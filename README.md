@@ -8,5 +8,5 @@ Manjarrez Valencia Varinia Yulianna
 ![Cetis107/CetisCaptura.png]
 
 
-!(https://github.com/VariniaCetis107/VariniaCetis107.github.io/blob/main/Cetis107/CetisCaptura.png)
+([https://github.com/VariniaCetis107/VariniaCetis107.github.io/blob/main/Cetis107/CetisCaptura.png](https://github.com/VariniaCetis107/VariniaCetis107.github.io/blob/main/Cetis107/CetisCaptura.png))
 
