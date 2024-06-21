@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto final parcial #3</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.7.1.js"></script>
 </head>
-<body>
-    Varinia Yulianna Manjarrez Valencia 
+<body style="background-color: darkgray;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 style="color: white;">SELECT * FROM alumno;</h3>
+                <p style="color: aqua;">Obtener el listado de todos los alumnos de la facultad</p>
+                <img src="imagenes/Consulta 1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 style="color: white;">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asigantura ON CURSO.IDcURSO = asigantura.CURSO</h3>
+                <p style="color: aqua;">Obtener el listado de curso y las asignaturas que tienen</p>
+                <img src="imagenes/Consulta 2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <p style="color: azure; border: 10px; border-radius: 10px; text-align: center; ">Varinia Yulianna Manjarrez Valencia</p>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
