@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h3 style="color: white;">SELECT * FROM alumno;</h3>
+                <h3 style="color: white;"> 1-SELECT * FROM alumno;</h3>
                 <p style="color: aqua;">Obtener el listado de todos los alumnos de la facultad</p>
                 <img src="imagenes/Consulta 1.png" alt="">
             </div>
@@ -20,12 +20,61 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h3 style="color: white;">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asigantura ON CURSO.IDcURSO = asigantura.CURSO</h3>
+                <h3 style="color: white;"> 2-SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asigantura ON CURSO.IDcURSO = asigantura.CURSO</h3>
                 <p style="color: aqua;">Obtener el listado de curso y las asignaturas que tienen</p>
                 <img src="imagenes/Consulta 2.png" alt="">
             </div>
         </div>
     </div>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 style="color: white;">3-SELECT alumno,apellidos alumno,nombre FROM alumno WHERE beca LIKE 'SI';</h3>
+                    <p style="color: aqua;">Obtener el listado (nombre apellidos) de alumnos que tengan becas</p>
+                    <img src="imagenes/3.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3 style="color: white;">4- SELECT profesor.nombre, profesor.apellido1, tlfcontactoprof.telefono FROM profesor INNER JOIN tlfcontactoprof</h3>
+                        <p style="color: aqua;">Obtener el listado de proesores (nombre apellidos y su numero de contacto)</p>
+                        <img src="imagenes/cap4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3 style="color: white;">5- SELECT * FROM alumno INNER JOIN asignatura WHERE asignatura.idAsignatura LIKE 'AS009'</h3>
+                        <p style="color: aqua;">Obtener el listado de alumnos (todos los campos) que estan inscritos ala asignatura de programacion </p>
+                        <img src="imagenes/5.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3 style="color: white;">6- SELECT profesor.nombre, asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor = impartir.idProfesor INNER JOIN asignatura ON impartir.idAsignatura=asignatura.idAsignatura</h3>
+                        <p style="color: aqua;">Obtener el listado de alumnos (todos los campos) que estan inscritos ala asignatura de programacion </p>
+                        <img src="imagenes/cap6.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3 style="color: white;">7- SELECT profesor.nombre, impartir.idAsignatura FROM profesor INNER JOIN impartir</h3>
+                        <p style="color: aqua;">Obtener el listado de alumnos (todos los campos) que estan inscritos ala asignatura de programacion </p>
+                        <img src="imagenes/6.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
     <p style="color: azure; border: 10px; border-radius: 10px; text-align: center; ">Varinia Yulianna Manjarrez Valencia</p>
     <script src="js/bootstrap.js"></script>
 </body>
