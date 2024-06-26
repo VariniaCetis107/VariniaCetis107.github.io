@@ -74,6 +74,74 @@
                     </div>
                 </div>
             </div>
+    div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 style="color: white;">8- SELECT alumno.* FROM alumno INNER JOIN matricula ON alumno.idAlumno = matricula.idAlumno INNER JOIN asignatura ON matricula.idAsignatura = asignatura.idAsignatura WHERE asignatura.coordinador = 'PR016'</h3>
+                <p style="color: aqua;">Obtener el listado que les da clase el profesor id PR048 (Jose Manuel), sin importar en que asignatura esté inscrito</p>
+                <img src="imagenes/Consulta8.png" alt="">
+            </div>
+        </div>
+    div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 style="color: white;">9- SELECT
+                    c.idCurso,
+                    c.nombreDescriptivo AS nombre_curso,
+                    a.idAsignatura,
+                    a.nombre AS nombre_asignatura,
+                    p.idProfesor,
+                    p.nombre AS nombre_profesor,
+                    p.apellido1 AS apellido1_profesor,
+                    p.apellido2 AS apellido2_profesor
+                    FROM
+                    curso c
+                    JOIN
+                    asignatura a ON c.idCurso = a.curso
+                    JOIN
+                    impartir i ON a.idAsignatura = i.idAsignatura
+                    JOIN
+                    profesor p ON i.idProfesor = p.idProfesor
+                    ORDER BY
+                    c.idCurso, a.idAsignatura, p.idProfesor;</h3>
+                <p style="color: aqua;">Obtener listado de cursos, con asignatura y el maestro que las imparte</p>
+                <img src="imagenes/Consulta9.png" alt="">
+            </div>
+        </div>
+    div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 style="color: white;">10- SELECT
+                    al.idAlumno,
+                    al.nombre AS nombre_alumno,
+                    al.apellido1 AS apellido1_alumno,
+                    al.apellido2 AS apellido2_alumno,
+                    a.idAsignatura,
+                    a.nombre AS nombre_asignatura,
+                    p.idProfesor,
+                    p.nombre AS nombre_profesor,
+                    p.apellido1 AS apellido1_profesor,
+                    p.apellido2 AS apellido2_profesor,
+                    c.idCurso,
+                    c.nombreDescriptivo AS nombre_curso
+                    FROM
+                    alumno al
+                    JOIN
+                    matricula m ON al.idAlumno = m.idAlumno
+                    JOIN
+                    asignatura a ON m.idAsignatura = a.idAsignatura
+                    JOIN
+                    impartir i ON a.idAsignatura = i.idAsignatura
+                    JOIN
+                    profesor p ON i.idProfesor = p.idProfesor
+                    JOIN
+                    curso c ON a.curso = c.idCurso
+                    ORDER BY
+                    al.idAlumno, a.idAsignatura</h3>
+                <p style="color: aqua;">Obtener listado de alumnos, con asignaturas que cursa, profesor que la imparte y curso al que pertenece</p>
+                <img src="imagenes/Consulta10.png" alt="">
+            </div>
+        </div>
             
     <p style="color: azure; border: 10px; border-radius: 10px; text-align: center; ">Varinia Yulianna Manjarrez Valencia</p>
     <script src="js/bootstrap.js"></script>
