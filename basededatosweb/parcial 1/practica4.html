@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen en línea</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <form action="practica4.php" method="POST">
+            <div class="row">
+                <h1>Exámen de musical</h1><hr>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        1. ¿Quién es el protagonista de los juegos de Mario?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta1" value="mario" required> mario </p>
+                            <p><input type="radio" name="pregunta1" value="trompeta" required> trompeta </p>
+                            <p><input type="radio" name="pregunta1" value="luigi" required> luigi </p>
+                        </div>
+                    </div>
+
+                    <div class="card p-4 mb-4">
+                        <p>
+                            2. <input type="text" name="pregunta2" required> es la princesa que Mario suele rescatar.
+
+                        </p>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        3. ¿Quién es el principal antagonista de Mario? (Selecciona 2)
+                        </div>
+                        <div class="card-body">
+                            <p><input type="checkbox" name="pregunta3[]" value=" Bowser" >  Bowser </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="bajo_acustico" > bajo acustico </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="Rey_Koopa" > Rey Koopa </p>
+                        </div>
+                    </div>
+
+                    <div class="card p-4 mb-4">
+                        <p>
+                            4. <input type="text" name="pregunta4" required>  permite a Mario crecer en tamaño
+
+                        </p>
+                    </div>
+
+                    <div class="card mb-4"></div>
+                        <div class="card-header">
+                        5. ¿Cómo se llama el hermano de Mario?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta5" value="luigi" required> luigi </p>
+                            <p><input type="radio" name="pregunta5" value="mario" required> mario </p>
+                            <p><input type="radio" name="pregunta5" value="arturo" required> arturo </p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4"></div>
+                        <div class="card-header">
+                        6. ¿Cómo se llama el dinosaurio compañero de Mario?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta6" value="yoshi" required> yoshi </p>
+                            <p><input type="radio" name="pregunta6" value="mario" required> mario </p>
+                            <p><input type="radio" name="pregunta6" value="mondongo" required> mondongo </p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        7. ¿Qué poder le otorga la Flor de Fuego a Mario?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta7" value="lanzar_bolas_de_fuego" required> lanzar bolas de fuego </p>
+                            <p><input type="radio" name="pregunta7" value="ibarra" required> ibarra </p>
+                            <p><input type="radio" name="pregunta7" value="mama" required> mama </p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        8. ¿Cómo se llama el archienemigo de Luigi en Luigis Mansion? (Selecciona 2)
+                        </div>
+                        <div class="card-body">
+                            <p><input type="checkbox" name="pregunta8[] value= "Rey_Buu" > Rey Buu </p>
+                            <p><input type="checkbox" name="pregunta8[]" value="Waluigi" > Waluigi</p>
+                            <p><input type="checkbox" name="pregunta8[]" value="saxofon" > saxofon</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4"></div>
+                        <div class="card-header">
+                        9. ¿En qué consola fue lanzado el icónico juego "Super Mario 64"?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta9" value="nintendo_64" required> nintendo 64 </p>
+                            <p><input type="radio" name="pregunta9" value="xbox" required> xbox </p>
+                            <p><input type="radio" name="pregunta9" value="play" required> play </p>
+                        </div>
+                    </div>
+
+                    <div class="card p-4 mb-4"></div>
+                        <p>
+                            10. <input type="text" name="pregunta10" required> debutó en "Donkey Kong" en 1981, donde era conocido como Jumpman.
+                        </p>
+                    </div>
+
+            </div>
+            <br><input type="submit" class="btn btn-primary" value="Terminar examen">
+        </form>
+    </div>
+</body>
+</html>
